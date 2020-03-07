@@ -1,10 +1,5 @@
 # Deploy React Capstone on DigitalOcean
 
-```sh
-sudo apt-get install pm2 serve json-server
-```
-
-
 ## Create Subdomains
 
 1. Log into DigitalOcean.
@@ -90,6 +85,12 @@ If you used `json-server` as the database for your application, follow these ste
 1. Run `sudo ln -s /etc/nginx/sites-available/capstone_api /etc/nginx/sites-enabled`
 
 ## Serving your Application
+
+In your terminal window where you are connected to your droplet, install the following software.
+
+```sh
+sudo apt-get install pm2 serve json-server
+```
 
 ### Configuration of pm2
 
