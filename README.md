@@ -89,7 +89,7 @@ If you used `json-server` as the database for your application, follow these ste
 In your terminal window where you are connected to your droplet, install the following software.
 
 ```sh
-sudo apt-get install pm2 serve json-server
+sudo apt-get install pm2 serve
 ```
 
 ### Configuration of pm2
@@ -117,10 +117,11 @@ pm2 start serve --name capstone --log capstone.log -- -l 8080
 
 ### Start the API
 
-Change to your `api` directory and create a server file.
+Change to your `api` directory, install `json-server` and create a server file.
 
 ```sh
 cd ../api
+npm i json-server
 touch server.js
 echo 'const jsonServer = require('json-server')
 const server = jsonServer.create()
